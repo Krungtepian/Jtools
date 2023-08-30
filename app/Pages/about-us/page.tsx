@@ -10,3 +10,5 @@ export default function AboutUs({}: Props) {
     </div>
   )
 }
+
+// fix this
