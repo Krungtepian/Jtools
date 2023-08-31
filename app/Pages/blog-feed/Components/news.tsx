@@ -4,19 +4,14 @@ type Props = {}
 
 export default function News({}: Props) {
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
-        <img src="" alt="Shoes" />
-        <div className="card-body">
-                <h2 className="card-title">
-                Shoes!
-                <div className="badge badge-secondary">NEW</div>
-                </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div className="card-actions justify-end">
-                <div className="badge badge-outline">Fashion</div> 
-                <div className="badge badge-outline">Products</div>
-            </div>
+    <div className="card w-96 bg-base-100 shadow-xl rounded-3xl">
+        <img src="https://yt3.googleusercontent.com/ytc/AOPolaRv5nxVBkDZBYnrUckT7U61WQSbT330Db3ve5aqqQ=s900-c-k-c0x00ffffff-no-rj" alt="porshe" />
+        <div className="gap-3 flex flex-col mt-3 ml-5 mb-3">
+          <h2 className="text-3xl font-normal ">News !</h2>
+          <p className='pl-3'>รายละเอียด ย่อ</p>
+          <p>and Full detail</p>
+          <p className='flex justify-end pr-5'>วัน/เดือน/ปี</p>
         </div>
     </div>
   )
-}
+}2

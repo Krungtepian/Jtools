@@ -18,13 +18,11 @@ export default function NewContainer({}: Props) {
         {id : 4 , title : "new4"},
         {id : 5 , title : "new5"},
         {id : 6 , title : "new6"},
-
-
     ]
 
   return (
-    <div>
-        <h1 className='text-center font-semibold text-xl '>ข่าวสาร</h1>
+    <div className='mt-7'>
+        <h1 className='text-center font-semibold text-3xl mb-3'>ข่าวสาร</h1>
         <div className='flex flex-wrap gap-10 align-middle justify-center'>
             {fakeNews.map(e=>{
                 return <News/>
@@ -33,3 +31,4 @@ export default function NewContainer({}: Props) {
     </div>
   )
 }
+
