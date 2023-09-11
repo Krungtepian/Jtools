@@ -12,7 +12,7 @@ const Navigation = () => {
                     </Link>                  
                 </div>
                 <div className=" w-full justify-end" id="navbar-dropdown">
-                    <ul className="flex flex-col md:flex-row justify-end font-medium p-4 text-lg">
+                    <ul className="flex flex-col md:flex-row sm:justify-end font-medium p-4 lg:text-lg md:text-md sm:text-sm">
                         <li><Link href="/" className="py-2 pl-3 pr-4 text-grey rounded hover:bg-gray-100 hover:text-blue-400">หน้าแรก</Link></li>
                         <li><Link href="/about-us" className=" py-2 pl-3 pr-4 text-grey rounded  hover:bg-gray-100 hover:text-blue-400" >เกี่ยวกับเรา</Link></li>
                         <li><Link href="/blog-feed" className=" py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 hover:text-blue-400">ข่าวสารและกิจกรรม</Link></li>

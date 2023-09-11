@@ -12,10 +12,10 @@ export default function Footer() {
                                 </svg>
                             </div>
                             <span className="self-center max-w-xl">
-                                <Link className="text-2xl font-semibold" href="/">
+                                <Link className="lg:text-2xl md:text-xl sm:text-md font-semibold" href="/">
                                     J Tools TECHNOLOGY Company Limited
                                 </Link>
-                                <p className="text-base font-ligth">
+                                <p className="lg:text-base md:text-sm sm:text-xs font-ligth">
                                     เจ ทูลล์ เทคโนโลยี จำกัด
                                 </p>
                             </span>
@@ -24,8 +24,8 @@ export default function Footer() {
 
                 <div className="flex flex-row justify-between w-7/12">
                     <div className="text-center md:text-left w-full" >
-                        <p className="pb-1 text-lg font-medium">เมนูหลัก</p>
-                        <ul className="pl-2 text-gray-500">
+                        <p className="pb-1 lg:text-lg md:text-base sm:text-sm font-medium">เมนูหลัก</p>
+                        <ul className="pl-2 text-gray-500 lg:text-base md:text-sm sm:text-xs">
                             <li>
                               <Link href="/" className=" hover:text-violet-400">เมนูหลัก</Link>
                             </li>
@@ -41,10 +41,10 @@ export default function Footer() {
 
                         </ul>
                     </div>
-                    <div className="text-center md:text-left w-full">
-                        <p rel="noopener noreferrer" className="hover:text-violet-400 pb-1 text-lg font-medium">ติดต่อเรา</p>
+                    <div className="text-center lg:text-left w-full">
+                        <p rel="noopener noreferrer" className="hover:text-violet-400 pb-1 lg:text-lg md:text-base sm:text-sm font-medium">ติดต่อเรา</p>
 
-                        <ul className="p-2 text-gray-500">
+                        <ul className="p-2 text-gray-500 lg:text-md md:text-sm sm:text-sm">
                             <li className="flex flex-row">
                                     <Link rel="noopener noreferrer" href="#" className="hover:text-violet-400">ติดต่อเรา</Link>
                             </li>
