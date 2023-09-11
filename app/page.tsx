@@ -1,6 +1,6 @@
 import React from 'react'
-import Welcome from './home/Components/Welcome'
-import SlideShow from './home/Components/SlideShow'
+import Welcome from './components/Welcome'
+import SlideShow from './components/SlideShow'
 
 type Props = {}
 
