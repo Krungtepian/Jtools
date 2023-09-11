@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function AdminLayout() {
-  return <>
-    Admin Layout
-  </>
+export default function AdminLayout({ children }: { children: React.ReactNode }) {
+  return <html>
+    <body>
+      {children}
+    </body>
+  </html>
 }
