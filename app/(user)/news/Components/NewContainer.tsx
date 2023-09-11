@@ -1,6 +1,5 @@
 import React from 'react'
 import News from './news'
-import { rejects } from 'assert'
 
 type Props = {}
 
