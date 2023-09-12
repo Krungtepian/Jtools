@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Navigation from './Components/Navigation'
 import Footter from './Components/Footer'
+import React from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
