@@ -13,9 +13,9 @@ const Navigation = () => {
                 </div>
                 <div className=" w-full justify-end" id="navbar-dropdown">
                     <ul className="flex flex-col md:flex-row sm:justify-end font-medium p-4 lg:text-lg md:text-md sm:text-sm">
-                        <li><Link href="/" className="py-2 pl-3 pr-4 text-grey rounded hover:bg-gray-100 hover:text-blue-400">หน้าแรก</Link></li>
+                        <li><Link href="/home" className="py-2 pl-3 pr-4 text-grey rounded hover:bg-gray-100 hover:text-blue-400">หน้าแรก</Link></li>
                         <li><Link href="/about-us" className=" py-2 pl-3 pr-4 text-grey rounded  hover:bg-gray-100 hover:text-blue-400" >เกี่ยวกับเรา</Link></li>
-                        <li><Link href="/blog-feed" className=" py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 hover:text-blue-400">ข่าวสารและกิจกรรม</Link></li>
+                        <li><Link href="/news" className=" py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 hover:text-blue-400">ข่าวสารและกิจกรรม</Link></li>
                         <li><Link href="/customer-service" className=" py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 hover:text-blue-400">สินค้าและบริการ</Link></li>
                         <li><Link href="/contact-us" className=" py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 hover:text-blue-400">ติดต่อเรา</Link></li>
                     </ul>
