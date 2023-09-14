@@ -37,17 +37,17 @@ export default function Footer() {
                                 <Link rel="noopener noreferrer" href="/customer-service" className="hover:text-violet-400">สินค้าและบริการ</Link>
                             </li>
                             <li>
-                                <Link rel="noopener noreferrer" href="blog-feed" className="hover:text-violet-400">ประกาศและข่าวสาร</Link>
+                                <Link rel="noopener noreferrer" href="news" className="hover:text-violet-400">ประกาศและข่าวสาร</Link>
                             </li>
 
                         </ul>
                     </div>
                     <div className="text-center lg:text-left w-full">
-                        <p rel="noopener noreferrer" className="hover:text-violet-400 pb-1 lg:text-lg md:text-base sm:text-sm font-medium">ติดต่อเรา</p>
+                        <p rel="noopener noreferrer" className="pb-1 lg:text-lg md:text-base sm:text-sm font-medium">ติดต่อเรา</p>
 
                         <ul className="p-2 text-gray-500 lg:text-md md:text-sm sm:text-sm">
                             <li className="flex flex-row">
-                                    <Link rel="noopener noreferrer" href="#" className="hover:text-violet-400">ติดต่อเรา</Link>
+                                    <Link rel="noopener noreferrer" href="contact-us" className="hover:text-violet-400">ติดต่อเรา</Link>
                             </li>
                                 <li className="flex flex-row">
                                     <p>tell icon</p>
