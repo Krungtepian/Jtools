@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
     if((await compare(password, u.password))) {
       console.log('correct')
       const token = await new SignJWT({}).setProtectedHeader({ alg: 'HS256' }).setExpirationTime(exp).sign(new TextEncoder().encode(secret))
-      response = NextResponse.redirect(new URL('/admin/dashboard', req.url))
+      response = new NextResponse()
       response.cookies.set('token', token, { secure: true, httpOnly: true })
       console.log(token)
     } else {
