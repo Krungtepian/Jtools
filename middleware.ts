@@ -1,11 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
+import { jwtVerify, KeyLike } from 'jose'
 
-export function middleware(req: NextRequest) {
-  console.log(req.cookies)
-  if(req.cookies.get('token')) { // check if token exists
-    // if it does, check if it's valid, if so redirect to dashboard, or no need if the user is already there
+export async function middleware(req: NextRequest) {
+  if(req.cookies.has('token') && (await jwtVerify(req.cookies.get('token')!.value, new TextEncoder().encode(process.env.SECRET!)))) {
+    if(req.nextUrl.pathname != '/admin/dashboard') {
+      return NextResponse.redirect(new URL('/admin/dashboard', req.url))
+    }
   } else {
     // redirect to login
+    console.log('redir')
     if(req.nextUrl.pathname != '/admin/login') {
       return NextResponse.redirect(new URL('/admin/login', req.url))
     }
