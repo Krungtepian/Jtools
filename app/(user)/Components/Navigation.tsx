@@ -36,27 +36,27 @@ const Navigation = () => {
               }`}
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
-                <li className="pb-6 text-xl text-black py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-gray-100 hover:text-blue-400">
+                <li className="pb-6 sm:text-mdmd:text-md lg:text-sm xl:text-sm text-black py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-gray-100 hover:text-blue-400">
                   <Link href="/home" onClick={() => setNavbar(!navbar)}>
                     หน้าเเรก
                   </Link>
                 </li>
-                <li className="pb-6 text-xl text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:text-blue-400  hover:bg-gray-100">
+                <li className="pb-6 sm:text-md md:text-md lg:text-sm xl:text-sm text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:text-blue-400  hover:bg-gray-100">
                   <Link href="/about-us" onClick={() => setNavbar(!navbar)}>
                     เกี่ยวกับเรา
                   </Link>
                 </li>
-                <li className="pb-6 text-xl text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:text-blue-400  hover:bg-gray-100">
+                <li className="pb-6 sm:text-md md:text-md lg:text-sm xl:text=sm text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:text-blue-400  hover:bg-gray-100">
                   <Link href="/news" onClick={() => setNavbar(!navbar)}>
                     ข่าวสารและกิจกรรม
                   </Link>
                 </li>
-                <li className="pb-6 text-xl text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:text-blue-400 hover:bg-gray-100">
+                <li className="pb-6 sm:text-md md:text-md lg:text-sm xl:text-sm text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:text-blue-400 hover:bg-gray-100">
                   <Link href="/customer-service" onClick={() => setNavbar(!navbar)}>
                     สินค้าและบริการ
                   </Link>
                 </li>
-                <li className="pb-6 text-xl text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:text-blue-400 hover:bg-gray-100">
+                <li className="pb-6 sm:text-md md:text-md lg:text-sm xl:text-sm text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:text-blue-400 hover:bg-gray-100">
                   <Link href="/contact-us" onClick={() => setNavbar(!navbar)}>
                     ติดต่อพวกเรา
                   </Link>
