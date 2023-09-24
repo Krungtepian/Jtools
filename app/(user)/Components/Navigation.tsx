@@ -24,14 +24,7 @@ const Navigation = () => {
                     <Link href="/" className="flex flex-row justify-around">
                         <span className="self-center text-2xl font-semibold whitespace-nowrap">JTools Logo</span>
                     </Link>
-                    <div className="mr-6"><AiOutlineMenu onClick={handleMenu} className="sm:hidden text-2xl cursor-pointer justify-end ml-"/></div>                  
-                </div>
-                
-                <div className={menuOpen ? 'left-0 top-0 w-[65%] h-screen relative bg-[#ecf0f3] ease-in duration-500 flex flex-col justify-start z-50': 'hidden'}>
-                    <div className="flex absolute top-6 right-6 w-full justify-end items-center">
-                        <AiOutlineClose onClick={handleMenu} className="text-2xl text-black mb-4" />
-                    </div>
-                    <ul className="flex flex-col justify-center items-center mt-20 font-medium p-4 lg:text-lg md:text-md sm:text-sm">
+                    <ul className="flex lg:flex-row sm:flex-col right-6 font-medium p-4 lg:text-lg md:text-md sm:text-sm">
                         <li><Link href="/home" className="py-2 pl-3 pr-4 text-grey rounded hover:bg-gray-100 hover:text-blue-400 mb-4">หน้าแรก</Link></li>
                         <li><Link href="/about-us" className=" py-2 pl-3 pr-4 text-grey rounded  hover:bg-gray-100 hover:text-blue-400 mb-4" >เกี่ยวกับเรา</Link></li>
                         <li><Link href="/news" className=" py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 hover:text-blue-400 mb-4">ข่าวสารและกิจกรรม</Link></li>
