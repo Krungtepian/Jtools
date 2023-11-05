@@ -5,7 +5,7 @@ type Props = {}
 export default function Form({}: Props) {
   return (
     <div className="min-h-screen flex flex-col justify-center text-center pt-10">
-        <h2 className="text-bold text-3xl">ติดต่อพวกเรา</h2>
+        <h2 className="text-bold text-3xl">ติดต่อพวกเรา/Contact us</h2>
         <form className="flex flex-col gap-4 mt-16 px-10 lg:mt-20 min-w-full lg:min-w-[500px] ">
           <input
           id="name"
