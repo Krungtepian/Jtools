@@ -34,7 +34,7 @@ export default function Footer() {
                                 <Link rel="noopener noreferrer" href="/about-us" className="hover:text-violet-400">เกี่ยวกับเรา</Link>
                             </li>
                             <li>
-                                <Link rel="noopener noreferrer" href="/customer-service" className="hover:text-violet-400">สินค้าและบริการ</Link>
+                                <Link rel="noopener noreferrer" href="/service" className="hover:text-violet-400">สินค้าและบริการ</Link>
                             </li>
                             <li>
                                 <Link rel="noopener noreferrer" href="news" className="hover:text-violet-400">ประกาศและข่าวสาร</Link>
