@@ -39,8 +39,10 @@ export default function Form({}: Props) {
           placeholder='ข้อความ/Information'
           className="rounded-3xl border-2 outline-none px-8 py-6 min-h-[16em]"
           >
-
           </textarea>
+          <div className="text-center mt-10">
+              <button className="bg-black text-white rounded-3xl px-8 py-2" type='submit'>Submit</button>
+          </div>
         </form>
     </div>
   )
