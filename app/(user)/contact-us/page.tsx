@@ -6,7 +6,6 @@ type Props = {}
 export default function Contact({}: Props) {
   return (
     <div className='mt-[10vh]'>
-      Contact
       <Form/>
     </div>
     
