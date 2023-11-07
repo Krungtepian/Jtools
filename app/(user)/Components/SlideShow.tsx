@@ -13,16 +13,16 @@ export default function SlideShow({}: Props) {
                 <img src="https://media.discordapp.net/attachments/1010821781596156024/1145356770294890557/jtool_pic.jpg?width=1888&height=1028" className="absolute block w-full lg:-translate-x-1/4 lg:-translate-y-1/4 lg:top-1/4 lg:left-1/4 md:-translate-x-1/2 md:-translate-y-1/2 md:top-1/2 md:left-1/2 " alt="..."></img>
             </div>
             <div className="hidden duration-700 ease-in-out" data-carousel-item >
-                {/* <img src="/docs/images/carousel/carousel-2.svg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."> */}
+                <img src="/docs/images/carousel/carousel-2.svg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."></img>
             </div>
             <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                {/* <img src="/docs/images/carousel/carousel-3.svg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."> */}
+                <img src="/docs/images/carousel/carousel-3.svg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."></img>
             </div>
             <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                {/* <img src="/docs/images/carousel/carousel-4.svg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."> */}
+                <img src="/docs/images/carousel/carousel-4.svg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."></img>
             </div>
             <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                {/* <img src="/docs/images/carousel/carousel-5.svg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."> */}
+                <img src="/docs/images/carousel/carousel-5.svg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."></img>
             </div>
         </div>
         <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
