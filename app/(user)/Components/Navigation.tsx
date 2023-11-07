@@ -7,7 +7,7 @@ import { AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 const Navigation = () => {
     const [navbar, setNavbar] = useState(false);
   return (
-      <nav className="w-full bg-white top-0 left-0 right-0 z-10 ">
+      <nav className="w-full bg-white top-0 left-0 right-0 z-10 fixed">
         <div className="mx-auto md:items-center md:flex lg:px-4 md:px-2 sm:px-2 w-full justify-between lg:text-base ">
           <div className="flex flex-row items-center justify-between py-3 md:py-5 md:block">
               <Link href="/" className='max-w-fit'>
