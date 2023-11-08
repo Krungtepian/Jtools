@@ -4,16 +4,17 @@ type Props = {}
 
 export default function Welcome({}: Props) {
   return (
-    <div className=' flex justify-center border flex-col shadow-md px-64 py-52 mb-5'>
-        <div className='flex flex-col text-center justify-center'>
-            <div className="grid gap-1 lg:font-lg md:text-sm sm:text-xs justify-center text-center">
-              <div className='lg:font-5xl md:text-3xl sm:text-xl  mb-5'>Welcome to JTools Company</div>
-            <p className='lg:font-sm md:text-sm sm:text-sm'>บริษัท เจ ทูลส์ เทคโนโลยี จำกัด (JTools) เป็นผู้นำด้านวิศวกรรม ให้บริการออกแบบและผลิตเครื่องจักร ชิ้นส่วนแม่นยำ อุปกรณ์ Jig & Fixture และเครื่องมือพิเศษ </p>
-            <p className='lg:font-sm md:text-sm sm:text-sm'>รวมถึงระบบอัตโนมัติ ท่ามกลางประสบการณ์แบ่งปันในอุตสาหกรรมหลากหลาย </p>
-              <p className='lg:font-sm md:text-sm sm:text-sm '>เช่น การผลิตเหล็ก กระดาษ ปูนซีเมนต์ พลังงาน และปิโตรเคมี สู่ภาครัฐและรัฐวิสหากิจต่างๆ </p>
-              </div>
-        </div>
-</div>
+    <section className='flex flex-col w-full h-[50vh] justify-center gap-3 bg-slate-200'>
+      <header className='px-[25vh] pb-[2vh]'>
+        <h1 className='text-4xl font-medium mb-4 ml-[2vw]'>JTools Technology</h1>
+        <h1 className='text-2xl font-medium'>บริษัท เจ ทูลส์ เทคโนโลยี จำกัด</h1>        
+      </header>
+      <span className='ml-[8vw] px-[15vw] '>
+        <h2 className='text-lg'>เราเป็นผู้นำเรื่อง การออกแบบงานออโตเมชั่น Automation เครื่องจักรที่ลดเวลาการผลิตเพื่อเพิ่มปริมาณงานและรักษาคุณงานให้ได้ตามมาตราฐาน โดยการใช้เทคโนโลยีที่เหมาสมและควบคุมได้ง่าย
+        เราเชี่ยวชาญในการผลิตและออกแบบเครื่องจักรอัตโนมัติ เครื่องมือพิเศษในขบวนการผลิตของลูกค้า
+        ด้วยการใช้ ซอพแวร์ชั้นนำที่น่าเชื่อถือ ถูกต้อง มีลิขสิทธิ รวมไปถึงให้บริการผลิตภัณฑ์เครื่องจักรตามความต้องการของลูกค้า รับผลิตงานตามแบบงานและรับผลิตที่มีความละเอียดสูง</h2> 
+      </span>
+    </section>
 
   )
 }

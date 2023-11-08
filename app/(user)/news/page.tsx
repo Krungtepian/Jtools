@@ -5,7 +5,7 @@ type Props = {}
 
 export default function Blog({}: Props) {
   return (
-    <div>
+    <div className='mt-[10vh]'>
       <NewContainer/>
     </div>
   )

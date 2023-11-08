@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Footer() {
     return (
-        <footer className="py-6">
+        <div className="py-6 flex-col">
             <div className="px-2 mx-10 justify-between flex-row flex">
                 <div className="max-w-xs">
                         <div rel="noopener noreferrer" className="flex justify-center space-x-3 md:justify-start">
@@ -34,7 +34,7 @@ export default function Footer() {
                                 <Link rel="noopener noreferrer" href="/about-us" className="hover:text-violet-400">เกี่ยวกับเรา</Link>
                             </li>
                             <li>
-                                <Link rel="noopener noreferrer" href="/customer-service" className="hover:text-violet-400">สินค้าและบริการ</Link>
+                                <Link rel="noopener noreferrer" href="/service" className="hover:text-violet-400">สินค้าและบริการ</Link>
                             </li>
                             <li>
                                 <Link rel="noopener noreferrer" href="news" className="hover:text-violet-400">ประกาศและข่าวสาร</Link>
@@ -65,6 +65,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-        </footer>
+            <footer className="mt-10 text-gray-300 text-center justify-center flex">2023 copyright by FirelinkShrine</footer>
+        </div>
     );
 }
