@@ -31,8 +31,8 @@ export default async function NewContainer({}: Props) {
     <div className='mt-7'>
         <h1 className='text-center font-semibold text-3xl mb-3'>ข่าวสาร</h1>
         <div className='flex flex-wrap gap-10 align-middle justify-center'>
-            {news.map(n => {
-                return <News newsId={n.id} newsCoverImage={n.coverImageUrl} newsDescription={n.description} newsTitle={n.title} />
+            {news.map((n, i) => {
+                return <News key={i} newsId={n.id} newsCoverImage={n.coverImageUrl} newsDescription={n.description} newsTitle={n.title} />
             })}
         </div>
     </div>
