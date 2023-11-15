@@ -1,5 +1,8 @@
 import Link from "next/link";
 import React from "react";
+import { FaPhoneSquareAlt } from "react-icons/fa"
+import { SiGmail } from "react-icons/si"
+import { MdPlace } from "react-icons/md";
 
 
 export default function Footer() {
@@ -24,22 +27,22 @@ export default function Footer() {
                             </div>
 				</div>
 				<div className="p-5">
-					<p rel="noopener noreferrer" className="pb-1 lg:text-lg md:text-base sm:text-sm font-medium">ติดต่อเรา</p>
+                    <p rel="noopener noreferrer" className="pb-1 lg:text-lg md:text-base sm:text-sm font-medium">ติดต่อเรา</p>
 
                         <ul className="p-2 text-gray-500 lg:text-md md:text-sm sm:text-sm">
                             <li className="flex flex-row">
                                     <Link rel="noopener noreferrer" href="contact-us" className="hover:text-violet-400">ติดต่อเรา</Link>
                             </li>
                                 <li className="flex flex-row">
-                                    <p>tell icon</p>
+                                    <p><FaPhoneSquareAlt/></p>
                                     <Link rel="noopener noreferrer" href="#" className="pl-1 hover:text-violet-400">089 893 1510</Link>
                                 </li>
                                 <li className="flex flex-row">
-                                    <p>Gmail icon</p>
+                                    <p><SiGmail /></p>
                                     <Link rel="noopener noreferrer" href="#" className="hover:text-violet-400 pl-1">Contact@jtools.com</Link>
                                 </li>
                                 <li className="flex flex-row">
-                                    <p>Place</p>
+                                    <p><MdPlace /></p>
                                     <Link rel="noopener noreferrer" href="#" className="hover:text-violet-400 pl-1">สถานที่</Link>
                                 </li>
                         </ul>
