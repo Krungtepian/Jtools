@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Footer() {
     return (
-        <div className="py-6 flex-col">
+        <div className="py-6 flex-col justify-center">
             <div className="px-2 mx-10 justify-between flex-row flex">
                 <div className="max-w-xs">
                         <div rel="noopener noreferrer" className="flex justify-center space-x-3 md:justify-start">
