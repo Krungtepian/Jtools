@@ -2,8 +2,8 @@ import React from 'react'
 
 const About = () => {
     return(
-        <section className={`flex flex-col bg-white py-5 text-2xl md:text-3xl`}>
-          <div className="container mx-auto px-11 text-center">
+        <section className={`flex flex-col bg-black py-5 text-2xl md:text-3xl`}>
+          <div className="container mx-auto px-11 text-center text-white">
             <h1 className="leading-tight max-w-5xl mx-auto text-4xl tracking-tight">
                 About us
             </h1>
@@ -20,7 +20,7 @@ const About = () => {
 <p className="text-xl leading-tight tracking-tight">ขยายการไปยังกลุ่มลูกค้าใหม่ๆ อย่างต่อเนื่อง</p>
 <p className="text-xl leading-tight tracking-tight">เสริมสร้างและพัฒนาบุคลากรให้สามารถรับงาน Automation ให้มากที่สุด</p>
           </div>
-          <div className="container mx-auto px-11 text-center mt-10">
+          <div className="container mx-auto px-11 text-center mt-10 text-white">
 <h3 className="text-xl leading-tight tracking-tight font-bold ">หัวข้อสำคัญในการดำเนินงาน</h3>
 <div className="text-xl leading-tight tracking-tight">
 <p><strong>การตลาด</strong>-ขยายฐานการขายอย่างไม่หยุดยั้ง</p>
@@ -32,7 +32,7 @@ const About = () => {
 <p><strong>อื่นๆ</strong>-ควบคุมความเสี่ยง,รักษา 5ส,รักษา Compliance, Percision</p>               
 </div>
           </div>
-          <div className='container mx-auto px-11 text-center mt-10'>
+          <div className='container mx-auto px-11 text-center mt-10 text-white'>
             <h4 className="text-2xl leading-tight tracking-tight font-bold">เเนะนำตัว</h4> 
 <h5 className="text-2xl leading-tight tracking-tight font-bold">บริษัท เจ ทูลส์ เทคโนโลยี จำกัด</h5>
     <p className="text-xl leading-tight tracking-tight">เป็นผู้นำเรื่อง การออกแบบงานออโตเมชั่น Automation เครื่องจักรที่ลดเวลาการผลิต และเพิ่มปริมาณงาน และรักษาคุณงานให้ได้ตามมาตราฐาน โดยการใช้เทคโนโลยี ที่เหมาสมและควบคุมได้ง่าย
@@ -40,7 +40,7 @@ const About = () => {
     ด้วยการใช้ ซอพแวร์ชั้นนำที่น่าเชื่อถือ ถูกต้อง มีลิขสิทธิ,ให้บริการผลิตภัณฑ์เครื่องจักรตามความต้องการของลูกค้า,รับผลิตงานตามแบบงานและรับผลิตที่มีความละเอียดสูง</p>          
           </div>
           <div className='container mx-auto px-11 text-center mt-10'>
-            <div className="leading-tight tracking-tight">
+            <div className="leading-tight tracking-tight text-white">
 <h6 className="text-2xl font-bold ">รายละเอียด</h6>
 <p className="text-xl">DESIGN-MAKING,
 AUTOMATION MACHINE,
