@@ -3,8 +3,8 @@ import { jwtVerify, KeyLike } from 'jose'
 
 export async function middleware(req: NextRequest) {
   if(req.cookies.has('token') && (await jwtVerify(req.cookies.get('token')!.value, new TextEncoder().encode(process.env.SECRET!)))) {
-    if(req.nextUrl.pathname != '/admin/dashboard') {
-      return NextResponse.redirect(new URL('/admin/dashboard', req.url))
+    if(req.nextUrl.pathname == '/admin/login') {
+      return NextResponse.redirect(new URL('/admin/', req.url))
     }
   } else {
     // redirect to login

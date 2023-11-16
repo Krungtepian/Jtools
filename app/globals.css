@@ -5,9 +5,9 @@
 @tailwind utilities;
 
 
-body {
+/* body {
   font-family: 'Roboto Mono', monospace;
-}
+} */
 
 root {
   --foreground-rgb: 0, 0, 0;
