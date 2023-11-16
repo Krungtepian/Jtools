@@ -4,7 +4,7 @@ type Props = {}
 
 export default function Welcome({}: Props) {
   return (
-    <section className='bg-slate-300 items-center flex flex-col py-5'>
+    <section className='bg-slate-300 items-center flex flex-col py-[5vh] min-h-fit'>
       <div className="text-center  container mx-auto px-11">
           <h1 className="leading-tight text-3xl max-w-5xl mx-auto tracking-tight">
                 Jtools Technology
@@ -19,6 +19,5 @@ export default function Welcome({}: Props) {
       </div>
       </div>
     </section>
-
   )
 }
