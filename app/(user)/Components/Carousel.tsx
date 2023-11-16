@@ -27,7 +27,7 @@ const Carousel = ({ children, ...options }: Props) => {
 
   return (
     <>
-    <div className="overflow-hidden" ref={emblaRef}>
+    <div className="overflow-hidden rounded-3xl" ref={emblaRef}>
       <div className="flex object-cover">{children}</div>
     </div>
     <Dots itemsLength={length} selectedIndex={selectedIndex} />
