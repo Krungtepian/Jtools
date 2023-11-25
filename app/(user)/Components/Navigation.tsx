@@ -14,7 +14,7 @@ const Navigation = () => {
     ['/contact-us', 'ติดต่อพวกเรา']
   ]
   return (
-      <nav className="w-full bg-white top-0 left-0 right-0 z-10 fixed">
+      <nav className="w-full bg-white top-0 left-0 right-0 z-10">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div className="flex  items-center justify-between py-3 md:py-5 md:block">
               <Link href="/" className='max-w-fit'>

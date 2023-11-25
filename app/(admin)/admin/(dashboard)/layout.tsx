@@ -12,7 +12,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
     <body className='h-full'>
       <div className='grid grid-cols-[300px_minmax(900px,_1fr)] h-full divide-x'>
         <div id='dash-nav'>
-          <h1>JTools Admin</h1>
+          <h1 className='p-2'>JTools Admin</h1>
           <ul className='flex justify-center'>
             {
               links.map((l, i) => {

@@ -1,0 +1,43 @@
+version: '3.8'
+services:
+  app:
+    build: ./
+    ports:
+      - 3001:3000
+    env_file:
+      - .env
+  mysql:
+    image: mysql:5.7.44
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=wordpress
+      - MYSQL_USER=wordpress
+      - MYSQL_PASSWORD=wordpress
+    networks:
+      - jtools
+  wordpress:
+    depends_on:
+      - mysql
+    image: wordpress:latest
+    ports:
+      - '8000:80'
+    restart: always
+    volumes:
+      - wp:/var/www/html
+    environment:
+      - WORDPRESS_DB_HOST=mysql:3306
+      - WORDPRESS_DB_USER=wordpress
+      - WORDPRESS_DB_PASSWORD=wordpress
+    networks:
+      - jtools
+  nginx:
+    image: nginx:1.25.3-alpine
+    
+networks:
+  jtools:
+volumes:
+  db_data:
+  wp:

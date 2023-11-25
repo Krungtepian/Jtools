@@ -6,8 +6,8 @@ type Props = {}
 
 export default function SlideShow({}: Props) {
     const images = [
-      "@/app/assets/images/jtool_pic_1.png",
-      "@/app/assets/images/IMG_2505.jpg"
+      "/images/jtool_pic_1.png",
+      "/images/IMG_2505.jpg"
   ]
 
   return (
