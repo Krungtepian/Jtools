@@ -13,8 +13,9 @@ const Navigation = () => {
     ['/service', 'สินค้าและบริการ'],
     ['/contact-us', 'ติดต่อพวกเรา']
   ]
+  const [active, setActive] = useState(links[0][0])
   return (
-      <nav className="w-full bg-white top-0 left-0 right-0 z-10">
+      <nav className="w-full bg-white top-0 left-0 right-0 z-10 fixed border-b-[2px]">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div className="flex  items-center justify-between py-3 md:py-5 md:block">
               <Link href="/" className='max-w-fit'>
@@ -36,8 +37,11 @@ const Navigation = () => {
           <div className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? 'p-12 md:p-0 block' : 'hidden'}`}>
                 <ul className="h-screen md:h-auto items-center justify-end md:flex">
                   {links.map((l: any) => {
-                    return <li className=" lg:text-xl md:text-sm sm:text-xs text-black py-1 md:px-5 text-center border-b-2 md:border-b-0  hover:bg-gray-100 hover:text-blue-400 items-center rounded-full active:scale-105">
-                    <Link href={l[0]} onClick={() => setNavbar(!navbar)}>
+                    return <li key={l[1]} className={`lg:text-xl md:text-sm sm:text-xs text-black py-1 md:px-5 text-center border-b-2 md:border-b-0 ${active == l[0] ? 'text-blue-400' : ''} hover:text-blue-400  items-center rounded-full active:scale-105`}>
+                    <Link href={l[0]} onClick={() => {
+                      setNavbar(!navbar)
+                      setActive(l[0])
+                    }}>
                       {l[1]}
                     </Link>
                   </li>

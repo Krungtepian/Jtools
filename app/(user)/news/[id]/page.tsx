@@ -1,29 +1,29 @@
 import React from 'react'
 
-// async function getData(id: any) {
-//   return new Promise(async(resolve) => {
-//     try {
-//       let data = await fetch(`http://localhost:8000/wp-json/wp/v2/posts/${id}`, {
-//         cache: 'no-cache',
-//         headers: {
-//           'Accept': 'application/json'
-//         }
-//       })
-//       data = await data.json()
-//       console.log(data)
-//       return data;
-//     } catch(e) {
-//       console.error(e)
-//     }
-//     resolve(<>
-//       Data from DB, saved from tinymce
-//     </>) // return promise again, placeholder for DB/API call
-//   })
-// }
+async function getData(id: any) {
+  try {
+    console.log('running')
+    let data: any = await fetch(`${process.env.GHOST_URL}/api/content/pages/${id}/?key=${process.env.GHOST_KEY}`, {
+      cache: 'no-cache',
+      headers: {
+        'Accept': 'application/json'
+      },
+      method: "GET"
+    })
+    data = await data.json()
+    console.log(data)
+    return data['pages'][0];
+  } catch(e) {  
+    console.error(e)
+  }
+}
 
 export default async function News({ params }: any) {
   
-  // const n = await getData(params.id)
+  const post = await getData(params.id)
 
-  return <iframe src={`http://localhost:8000/archives/${params.id}?iframe_mode=true`} className='ifr w-full h-screen grow'></iframe>
+  return <div id='post'>
+    <h1 className='text-xl'>{post.title}</h1>
+    <div id='post-body' dangerouslySetInnerHTML={{ __html: post.html }}/>
+  </div>
 }

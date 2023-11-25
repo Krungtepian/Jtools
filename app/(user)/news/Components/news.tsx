@@ -17,7 +17,7 @@ export default function News({ newsId, newsCoverImage, newsTitle, newsDescriptio
         <img src={newsCoverImage} alt="porshe" />
         <div className="gap-3 flex flex-col mt-3 ml-5 mb-3">
           <h2 className="text-3xl font-normal ">{newsTitle}</h2>
-          <p className='pl-3'>{newsDescription}</p>
+          <div id='post-desc' dangerouslySetInnerHTML={{ __html: newsDescription}}/>
           <p className='flex justify-end pr-5'>{newsDate.split('T')[0]}</p>
         </div>
     </Link>
