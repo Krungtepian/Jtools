@@ -29,7 +29,7 @@ export default async function Blog({ }: Props) {
         <h1 className='text-center font-semibold text-3xl mb-3'>ข่าวสาร</h1>
         <div className='flex flex-wrap gap-10 align-middle justify-center'>
             {news.map((n: any) => {
-                return <News key={n.id} newsId={n.id} newsCoverImage={n.feature_image} newsDescription={n.feature_image_caption} newsTitle={n.title} newsDate={n.created_at} />
+                return ( <News key={n.id} newsId={n.id} newsCoverImage={n.feature_image} newsDescription={n.feature_image_caption} newsTitle={n.title} newsDate={n.created_at} /> )
             })}
         </div>
     </div>
