@@ -1,5 +1,5 @@
 import React from 'react'
-import News from './Components/news'
+import News from './components/News'
 
 type Props = {}
 
