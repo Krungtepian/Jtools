@@ -25,6 +25,7 @@
     "embla-carousel-react": "^8.0.0-rc14",
     "eslint": "8.47.0",
     "eslint-config-next": "^14.0.2",
+    "google-map-react": "^2.2.1",
     "jose": "^4.14.6",
     "mongoose": "^7.5.2",
     "next": "^14.0.2",
