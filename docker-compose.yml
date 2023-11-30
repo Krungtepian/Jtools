@@ -8,14 +8,14 @@ services:
       - .env
     networks:
       - jtools
-  ghost:
-    image: 5.74.0-alpine
-    environment:
-      - url=http://localhost:2368
-    ports:
-      - 2368:2368
   nginx:
     image: nginx:1.25.3-alpine
-    
+  mongo:
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    ports:
+      - 27017:27017
 networks:
   jtools:
