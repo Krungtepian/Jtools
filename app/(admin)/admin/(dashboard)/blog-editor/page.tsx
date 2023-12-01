@@ -1,8 +1,16 @@
 'use client'
 
 import React, { useState, useRef   } from 'react'
+import grapesjs, { Editor as Ed } from 'grapesjs';
+import GjsEditor from '@grapesjs/react';
+import pw from 'grapesjs-preset-webpage'
+import bb from 'grapesjs-blocks-basic'
 
 export default function Editor() {
+
+  const onEditor = (editor: Ed) => {
+    console.log('Editor loaded', { editor });
+  };
 
   const [open, setOpen] = useState(false)
   const coverLabel = useRef<HTMLLabelElement>(null)
@@ -29,7 +37,6 @@ export default function Editor() {
                 reader.onload = () => {
                   coverLabel.current!.style.backgroundImage = `url("${reader.result}")`
                   console.log(coverLabel.current)
-                  // coverLabel.current!.innerText = ''
                 }
                 if(file) reader.readAsDataURL(file)
               }
@@ -41,5 +48,20 @@ export default function Editor() {
         </form>
       </div>
     </div>
+    {/* <GjsEditor
+      // Pass the core GrapesJS library to the wrapper (required).
+      // You can also pass the CDN url (eg. "https://unpkg.com/grapesjs")
+      grapesjs={grapesjs}
+      // Load the GrapesJS CSS file asynchronously from URL.
+      // This is an optional prop, you can always import the CSS directly in your JS if you wish.
+      grapesjsCss="https://unpkg.com/grapesjs/dist/css/grapes.min.css"
+      // GrapesJS init options
+      options={{
+        height: '100vh',
+        storageManager: false,
+      }}
+      onEditor={onEditor}
+      plugins={[pw, bb]}
+    /> */}
   </div>
 }

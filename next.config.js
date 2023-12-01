@@ -26,6 +26,11 @@ const nextConfig = {
                 destination: "/Pages/blog-feed"
             },
         ];
+    },
+    experimental: {
+        serverActions: {
+            bodySizeLimit: '1gb'
+        }
     }
 };
 
