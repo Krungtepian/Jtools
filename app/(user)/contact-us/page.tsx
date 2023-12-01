@@ -26,9 +26,9 @@ export default function Form({}: Props) {
   }
 
   return (
-    <div className={`min-h-screen flex flex-col justify-center text-center pt-[7vh]`}>
-        <h2 className="text-bold text-3xl">ติดต่อพวกเรา/Contact us</h2>
-        <form className="flex flex-col gap-4 mt-16 px-10 lg:mt-20 min-w-full lg:min-w-[500px] " onSubmit={submitForm}>
+    <div className={`flex flex-col justify-center text-center`}>
+        <h2 className="text-bold text-3xl mt-14">ติดต่อพวกเรา/Contact us</h2>
+        <form className="flex flex-col gap-4 mt-8 px-10 lg:mt-10 min-w-full lg:min-w-[500px] " onSubmit={submitForm}>
           <input
           onChange={e => setName(e.target.value)}
           id="name"
@@ -57,7 +57,7 @@ export default function Form({}: Props) {
           className="rounded-3xl border-2 outline-none px-8 py-6 min-h-[16em]"
           >
           </textarea>
-          <div className="text-center mt-10">
+          <div className="text-center my-5">
               <button className="bg-black text-white rounded-3xl px-8 py-2" type='submit'>Submit</button>
           </div>
         </form>
