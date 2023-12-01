@@ -8,7 +8,7 @@ import { compare } from 'bcryptjs'
 import { SignJWT } from 'jose'
 
 const exp = Math.floor(Date.now() + (7 * 24 * 60 * 60))
-const secret = process.env.SECRET! // define this in .env.local
+const secret = process.env.SECRET! // define this in .env
 
 export default async function login(_:any, data: FormData) {
   await connectDb()

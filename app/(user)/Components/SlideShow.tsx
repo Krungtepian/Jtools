@@ -11,13 +11,13 @@ export default function SlideShow({}: Props) {
   ]
 
   return (
-<div className="lg:w-3/4 mx-auto my-2"> 
+<div className="lg:w-3/4 mx-auto my-2 max-w-5xl"> 
       {/* //carousel-image */}
       <Carousel loop>
         {images.map((src, i) => {
           return (
-            <div className=" min-w-0 flex-[0_0_100%]" key={i}>
-              <img src={src}  className="object-cover" alt="alt" />
+            <div className="min-w-0 flex-[0_0_100%]" key={i}>
+              <img src={src}  className="object-cover aspect-video" alt="alt" />
             </div>
           );
         })}
