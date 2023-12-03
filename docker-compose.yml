@@ -1,19 +1,17 @@
 version: '3.8'
 services:
-  # app:
-  #   build: ./
-  #   ports:
-  #     - 3001:3000
-  #   env_file:
-  #     - .env
-  #   networks:
-  #     - jtools
+  app:
+    build: ./
+    env_file:
+      - .env
+    networks:
+      - jtools
   nginx:
     image: nginx:1.25.3-alpine
     ports:
       - 80:80
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx.dev.conf:/etc/nginx/nginx.conf # replace nginx.dev.conf with nginx.prod.conf when deploying to production
     networks:
       - jtools
   mongo:
@@ -23,6 +21,8 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: example
     ports:
       - 27017:27017
+    volumes:
+      - mongo:/data/db
     networks:
       - jtools
   minio:
@@ -30,7 +30,15 @@ services:
     ports:
       - 9000:9000
       - 9001:9001
+    volumes:
+      - minio:/bitnami/minio/data
+    environment:
+      - MINIO_ROOT_USER=minioadmin
+      - MINIO_ROOT_PASSWORD=minioadmin
     networks:
       - jtools
 networks:
   jtools:
+volumes:
+  minio:
+  mongo:
