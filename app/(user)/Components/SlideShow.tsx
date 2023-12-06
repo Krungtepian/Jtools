@@ -8,7 +8,9 @@ type Props = {}
 export default function SlideShow({}: Props) {
     const images = [
       "/images/jtool_pic_1.png",
-      "/images/IMG_2505.jpg"
+      "/images/besideright.jpg",
+      "/images/besideleft.jpg",
+      "/images/farsight.jpg"
   ]
 
   return (
