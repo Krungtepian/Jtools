@@ -1,4 +1,9 @@
 import React from 'react'
+import testimage from '@/public/images/IMG_4216.jpg'
+import Image from 'next/image'
+import companyinside from '@/public/images/IMG_4217.jpg'
+import companyanother from '@/public/images/IMG_4218.jpg'
+import companyintroduce from '@/public/images/IMG_4223.jpg'
 
 const About = () => {
     return(
@@ -7,6 +12,9 @@ const About = () => {
             <h1 className="leading-tight max-w-5xl mx-auto text-4xl tracking-tight">
                 About us
             </h1>
+            <div className="justify-center flex mt-3">
+            <Image src={testimage} alt="picture" width={500} height={300}/>
+            </div>
             <h2 className="text-2xl mt-4">
                 Business detail
                 </h2>
@@ -20,6 +28,9 @@ const About = () => {
             <p className="text-xl leading-tight tracking-tight">ขยายการไปยังกลุ่มลูกค้าใหม่ๆ อย่างต่อเนื่อง</p>
             <p className="text-xl leading-tight tracking-tight">เสริมสร้างและพัฒนาบุคลากรให้สามารถรับงาน Automation ให้มากที่สุด</p>
                       </div>
+                      <div className="justify-center flex mt-3">
+            <Image src={companyinside} alt="picture" width={500} height={300}/>
+            </div>
                       <div className="container mx-auto px-11 text-center mt-10 text-white">
             <h3 className="text-xl leading-tight tracking-tight font-bold ">หัวข้อสำคัญในการดำเนินงาน</h3>
             <div className="text-xl leading-tight tracking-tight">
@@ -32,6 +43,9 @@ const About = () => {
             <p><strong>อื่นๆ</strong>-ควบคุมความเสี่ยง,รักษา 5ส,รักษา Compliance, Percision</p>               
             </div>
           </div>
+          <div className="justify-center flex mt-3">
+            <Image src={companyanother} alt="picture" width={500} height={300}/>
+            </div>
           <div className='container mx-auto px-11 text-center mt-10 text-white'>
             <h4 className="text-2xl leading-tight tracking-tight font-bold">เเนะนำตัว</h4> 
 <h5 className="text-2xl leading-tight tracking-tight font-bold">บริษัท เจ ทูลส์ เทคโนโลยี จำกัด</h5>
@@ -41,6 +55,9 @@ const About = () => {
           </div>
           <div className='container mx-auto px-11 text-center mt-10'>
             <div className="leading-tight tracking-tight text-white">
+              <div className="justify-center flex mt-3">
+            <Image src={companyintroduce} alt="picture" width={500} height={300}/>
+            </div>
 <h6 className="text-2xl font-bold ">รายละเอียด</h6>
 <p className="text-xl">DESIGN-MAKING,
 AUTOMATION MACHINE,
