@@ -10,6 +10,7 @@
     "set-pw": "node lib/admin/set-password.js"
   },
   "dependencies": {
+    "@googlemaps/js-api-loader": "^1.16.2",
     "@grapesjs/react": "^1.0.0",
     "@tinymce/tinymce-react": "^4.3.0",
     "@tryghost/content-api": "^1.11.20",

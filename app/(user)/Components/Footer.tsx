@@ -1,11 +1,57 @@
+'use client'
+
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import { FaPhoneSquareAlt } from "react-icons/fa"
 import { SiGmail } from "react-icons/si"
 import { MdPlace } from "react-icons/md";
+import { Loader } from '@googlemaps/js-api-loader'
 
 
 export default function Footer() {
+
+    useEffect(() => {
+        let map: any;
+        const loc = { lat: 14.386937, lng: 100.593500 }
+        const loader = new Loader({
+            apiKey: "AIzaSyAVwZ5F86meBjtnDjoi-a5vNkMbPxpYj14",
+            version: "weekly",
+          });
+          
+          loader
+            .importLibrary('maps')
+            .then(({ Map, MapTypeId }) => {
+                map = new Map(document.getElementById("map"), {
+                    center: loc,
+                    zoom: 18,
+                    gestureHandling: 'none',
+                    streetViewControl: false,
+                    mapTypeId: MapTypeId.HYBRID,
+                    disableDefaultUI: true,
+                    clickableIcons: false
+                });
+            })
+            .catch((e) => {
+                // do something
+                console.log(e)
+            });
+
+            loader
+              .importLibrary('marker')
+              .then(({ Marker }) => {
+                new Marker({
+                  position: loc,
+                  map,
+                  title: "JToolsTechnology",
+                });
+              })
+              .catch((e) => {
+                  // do something
+                  console.log(e)
+              });
+            
+    }, [])
+
     return (
         <>
         <div className="bg-gray-50 h-1/2 w-full flex md:flex-row flex-col justify-around items-start p-20">
@@ -25,6 +71,7 @@ export default function Footer() {
                                 </p>
                             </span>
                             </div>
+                            <div id="map" className="h-[300px]" onClick={() => window.open("https://maps.app.goo.gl/AfbKDhJhVr4He3KeA")}></div>
 				</div>
 				<div className="p-5">
                     <p rel="noopener noreferrer" className="pb-1 lg:text-lg md:text-base sm:text-sm font-medium">ติดต่อเรา</p>
